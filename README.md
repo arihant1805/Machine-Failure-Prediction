@@ -21,7 +21,7 @@ The dataset used in this project is stored in a CSV file named "machine failure.
    pip install pandas scikit-learn numpy tensorflow keras
    ```
 
-3. **Open Jupyter Notebook**: Open the Jupyter Notebook file `Machine_Failure_Prediction.ipynb` in your Jupyter Notebook environment.
+3. **Open Jupyter Notebook**: Open the Jupyter Notebook file `ProjectCode.ipynb` in your Jupyter Notebook environment.
 
 4. **Run the Notebook**: Execute each cell in the notebook sequentially to load the dataset, preprocess the data, build the machine failure prediction model, train the model, and evaluate its performance.
 
