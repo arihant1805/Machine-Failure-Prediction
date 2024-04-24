@@ -1,39 +1,45 @@
 # Machine Failure Prediction Model
 
-## Overview
-This project entails the development of a predictive model to anticipate machine failures using machine learning techniques. The model, built with Keras and TensorFlow, supplemented by scikit-learn, aims to provide accurate forecasts of potential failures, enabling proactive maintenance strategies to minimize downtime and optimize operations.
+## Introduction
+This project aims to predict machine failures using machine learning techniques. The model, developed using Python in a Jupyter Notebook environment, utilizes a combination of Keras, TensorFlow, and scikit-learn libraries for data preprocessing, model construction, training, and evaluation.
 
-## Key Features
-- Utilizes a Neural Network architecture implemented in Keras to capture complex patterns in machine data.
-- Integration of TensorFlow for efficient model training and deployment.
-- Incorporates scikit-learn for additional preprocessing and evaluation capabilities.
-- Achieved outstanding performance metrics:
-  - Validation Set Accuracy: 99.9%
-  - Test Set Accuracy: 99.85%
+## Dependencies
+- pandas
+- scikit-learn
+- numpy
+- TensorFlow
+- Keras
+
+## Dataset
+The dataset used in this project is stored in a CSV file named "machine failure.csv". It consists of various features such as UDI, Product ID, Type, Air temperature, Process temperature, Rotational speed, Torque, Tool wear, and multiple failure categories.
 
 ## Usage
-1. **Installation**: Ensure that Python and the required libraries (`keras`, `tensorflow`, `scikit-learn`) are installed. You can install them via pip:
+1. **Clone the Repository**: Clone this repository to your local machine.
+
+2. **Install Dependencies**: Ensure you have all the required dependencies installed. You can install them using pip:
    ```
-   pip install keras tensorflow scikit-learn
+   pip install pandas scikit-learn numpy tensorflow keras
    ```
 
-2. **Data Preparation**: Prepare your machine data in a suitable format. Ensure that it is properly preprocessed and split into training, validation, and test sets.
+3. **Open Jupyter Notebook**: Open the Jupyter Notebook file `Machine_Failure_Prediction.ipynb` in your Jupyter Notebook environment.
 
-3. **Model Training**: Run the provided script to train the machine failure prediction model:
-   ```
-   python train_model.py
-   ```
+4. **Run the Notebook**: Execute each cell in the notebook sequentially to load the dataset, preprocess the data, build the machine failure prediction model, train the model, and evaluate its performance.
 
-4. **Evaluation**: Evaluate the trained model's performance using the provided evaluation script:
-   ```
-   python evaluate_model.py
-   ```
+5. **Evaluate Results**: After running all the cells, review the output to observe the model's accuracy on the validation and test sets.
 
-5. **Deployment**: Once satisfied with the model's performance, deploy it in your production environment to predict machine failures in real-time.
+## Model Architecture
+The neural network model architecture consists of:
+- Input layer with 11 neurons (input features)
+- Two hidden layers with 7 and 3 neurons, respectively, using ReLU activation function
+- Output layer with 1 neuron using Sigmoid activation function for binary classification
+
+## Performance
+- **Validation Set Accuracy**: 99.9%
+- **Test Set Accuracy**: 99.85%
+
+## Future Improvements
+- Experiment with different neural network architectures and hyperparameters to potentially improve model performance.
+- Explore additional feature engineering techniques to enhance predictive capabilities.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-- This project was inspired by the need for proactive maintenance strategies in industrial settings.
-- Special thanks to the contributors of Keras, TensorFlow, and scikit-learn for their invaluable libraries.
